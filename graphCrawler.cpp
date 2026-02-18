@@ -3,6 +3,9 @@
 #include <rapidjson/document.h>
 #include <string>
 
+const std::string baseUrl =
+    "http://hollywood-graph-crawler.bridgesuncc.org/neighbors/Tom%20Hanks";
+
 size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp) {
   size_t total = size * nmemb;
   auto *s = static_cast<std::string *>(userp);
@@ -15,12 +18,12 @@ int main(int argc, char *argv[]) {
   std::string buffer;
   curl_global_init(CURL_GLOBAL_ALL);
   curl = curl_easy_init();
+
   if (curl) {
-    curl_easy_setopt(
-        curl, CURLOPT_URL,
-        "http://hollywood-graph-crawler.bridgesuncc.org/neighbors/Tom%20Hanks");
+    curl_easy_setopt(curl, CURLOPT_URL, baseUrl.c_str());
 
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
   }
 
