@@ -1,3 +1,4 @@
+#include <chrono>
 #include <cstddef>
 #include <curl/curl.h>
 #include <iostream>
@@ -27,7 +28,7 @@ std::vector<std::string> FetchNeighbors(CURL *curl, std::string &PNode) {
   curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
   curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
 
-  CURLcode rc = curl_easy_perform(curl);
+  curl_easy_perform(curl);
 
   rapidjson::Document doc;
   doc.Parse(buffer.c_str());
