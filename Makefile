@@ -7,8 +7,8 @@ RAPIDJSON_INC = ./rapidjson/include
 # libcurl link (works on CentOS/Centaurus if curl-devel is installed)
 LDFLAGS = -lcurl
 
-TARGET = bfs
-SRC = GraphCrawler.cpp
+TARGET = graphCrawler
+SRC = graphCrawler.cpp
 
 all: $(TARGET)
 

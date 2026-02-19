@@ -5,6 +5,6 @@
 #SBATCH --partition=Centaurus
 #SBATCH --mem=10G
 
-srun $HOMEGraphCrawler/graphCrawler Tom \Hanks 2
-srun $HOMEGraphCrawler/graphCrawler Tom \Hanks 3
-srun $HOMEGraphCrawler/graphCrawler Tom \Hanks 4
+srun $HOME/GraphCrawler/graphCrawler "Tom Hanks" 2
+srun $HOME/GraphCrawler/graphCrawler "Tom Hanks" 3
+srun $HOME/GraphCrawler/graphCrawler "Tom Hanks" 4

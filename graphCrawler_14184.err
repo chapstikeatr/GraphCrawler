@@ -1,0 +1,9 @@
+slurmstepd: error: execve(): /graphCrawler: No such file or directory
+srun: error: gal-c1: task 0: Exited with exit code 2
+srun: Terminating StepId=14184.0
+srun: error: gal-c1: task 0: Exited with exit code 2
+srun: Terminating StepId=14184.1
+slurmstepd: error: execve(): /graphCrawler: No such file or directory
+slurmstepd: error: execve(): /graphCrawler: No such file or directory
+srun: error: gal-c1: task 0: Exited with exit code 2
+srun: Terminating StepId=14184.2

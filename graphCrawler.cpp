@@ -96,8 +96,6 @@ int main(int argc, char *argv[]) {
     std::cout << n << "\n";
   }
 
-  const auto ms =
-      std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t0).count();
   std::cerr << "Nodes " << nodes.size() << "Time: " << elapsed.count();
 
   curl_easy_cleanup(curl);
