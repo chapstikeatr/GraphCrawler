@@ -1,9 +1,0 @@
-Usage: /users/cstickl3/GraphCrawler/graphCrawler "Start Node" <depth>
- Make sure to escape spacessrun: error: gal-c1: task 0: Exited with exit code 1
-srun: Terminating StepId=14186.0
-Usage: /users/cstickl3/GraphCrawler/graphCrawler "Start Node" <depth>
- Make sure to escape spacessrun: error: gal-c1: task 0: Exited with exit code 1
-srun: Terminating StepId=14186.1
-Usage: /users/cstickl3/GraphCrawler/graphCrawler "Start Node" <depth>
- Make sure to escape spacessrun: error: gal-c1: task 0: Exited with exit code 1
-srun: Terminating StepId=14186.2
